@@ -1,0 +1,135 @@
+/* GENERAL LAYOUT */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+}
+
+/* SIDEBAR: SORT OPTIONS */
+#sortOptions {
+  min-width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#sortOptions label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#sortOptions select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+#sortOptions select:focus {
+  border-color: #4e7cff;
+  box-shadow: 0 0 0 3px rgba(78, 124, 255, 0.2);
+}
+
+/* MAIN CONTENT */
+#mainBody h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* LESSON GRID */
+#lessons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* LESSON CARD */
+.lesson {
+  background: white;
+  flex: 0 0 calc(33.333% - 20px);
+  min-width: 250px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.lesson:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.lesson h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Icon */
+.lesson i {
+  font-size: 28px;
+  color: #4e7cff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Info text */
+.lesson p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.lesson span {
+  font-weight: 600;
+}
+
+/* Add to cart button */
+.lesson button {
+  margin-top: 15px;
+  background: #4e7cff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  width: 100%;
+}
+
+.lesson button:hover {
+  background: #3b63d6;
+}
+#welcomeBox {
+  background: linear-gradient(135deg, #6a5cff, #3b9dff);
+  padding: 60px 30px;
+  border-radius: 14px;
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+}
+
+#welcomeBox h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
